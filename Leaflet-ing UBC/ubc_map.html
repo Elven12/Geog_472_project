@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UBC </title>
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./p5.min.js"></script>
+
+</head>
+
+<body>
+    <div id="mapid" style="width: 600px; height: 400px;"></div>
+    <!-- Our web map will get placed into this div element -->
+
+    <div id="controls" style="margin: 15px;">
+      <button id="showRoad" onclick="buttonswitch()">Show Base Roads</button>
+
+      <select name = "road type", id = 'road_types'>
+        <option value = ""> --Highlight Road Class</option>
+        <option value = "major"> Major</option>
+        <option value = "local"> Local</option>
+        <option value = "ppathl"> Path</option>
+        <option value = "lane"> Lane </option>
+      </select>
+      <button id ="roadHighlightButton" style = "margin: 15px;"> Highlight Light </button>
+
+    <script src="lib/ubc_mapping.js" type ="text/javascript"></script>
+</body>
+
+</html>
