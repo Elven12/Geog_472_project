@@ -55,6 +55,17 @@ function buttonswitch(id) {
     }
 }
 
+function showBaseLayer(data){
+    L.geoJSON(data, {
+        style: function() {
+            return {
+                color: '#212121',
+                weight: 1
+            }
+        },
+    }).addTo(map);
+}
+
 function showMajorLayer(data){
     if (map.hasLayer(majorRoad)){
         map.removeLayer(majorRoad);
@@ -126,6 +137,7 @@ function markerChange(id, data) {
 
 $.getJSON("https://raw.githubusercontent.com/UBCGeodata/ubc-geospatial-opendata/master/ubcv/transportation/geojson/ubcv_roads_simple.geojson",
     function (data) {
+        showBaseLayer(data);
         showlayers(data);
 
         document.getElementById("Major").addEventListener('click', function () {
