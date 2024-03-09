@@ -3,10 +3,9 @@ var map = L.map('mapid', {
     zoom: 13.5
 });
 
-var topoTiles =  L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	bounds: [[45, 5], [48, 11]]
+var topoTiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 function majorRoad_style(feature) {
