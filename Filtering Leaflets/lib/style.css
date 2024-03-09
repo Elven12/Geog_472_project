@@ -1,0 +1,30 @@
+#mapid {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+}
+
+#bar {
+    position: absolute;
+    margin-left: 602px; 
+    width: 120px;
+    background-color: rgb(167, 167, 167);
+    height: 500px;
+}
+.selector{
+    position: fixed;
+    left: 100px;
+    top: 10px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.btn{
+    width: 120px;
+    background-color: rgb(142, 177, 225)
+}
+.btn:hover{
+    background-color: rgb(67, 90, 123);
+    cursor: pointer;
+}
