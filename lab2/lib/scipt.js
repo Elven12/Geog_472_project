@@ -16,10 +16,12 @@ $.getJSON("electric-vehicle-charging-stations.geojson", function (data) {
         if (feature.properties && feature.properties.address){
             layer.on('mouseover', function(e){
                 this.bindPopup(feature.properties.address).openPopup();
+                map.getCanvas().style.cursor = 'pointer';
 
             });
             layer.on('mouseout',function(e){
                 this.closePopup();
+                map.getCanvas().style.cursor = 'pointer';
             });
         }
     }
