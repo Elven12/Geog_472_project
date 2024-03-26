@@ -6,9 +6,6 @@ const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-function micepop(){
-    document.getElem
-}
 
 $.getJSON("electric-vehicle-charging-stations.geojson", function (data) {
   L.geoJSON(data,{
